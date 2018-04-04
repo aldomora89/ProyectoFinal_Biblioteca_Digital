@@ -24,6 +24,7 @@ public class Inicio extends javax.swing.JFrame {
         setLocationRelativeTo(null);//Esto se utiliza para poder centrar ventanas
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         
+        
     }
 
     /**
