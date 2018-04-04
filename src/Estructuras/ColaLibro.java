@@ -11,7 +11,7 @@ import Datos.Libro;
  *
  * @author Colochos
  */
-public class Cola {
+public class ColaLibro {
     
     private NodoLibro frente, ultimo;
 

@@ -25,6 +25,7 @@ public class Inicio extends javax.swing.JFrame {
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         
         
+        
     }
 
     /**

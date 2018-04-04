@@ -9,7 +9,7 @@ package Estructuras;
  *
  * @author Colochos
  */
-public class Pila {
+public class PilaCliente {
     
      private NodoCliente top;
 

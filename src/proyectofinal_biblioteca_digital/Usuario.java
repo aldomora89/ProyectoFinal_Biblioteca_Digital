@@ -5,6 +5,7 @@
  */
 package proyectofinal_biblioteca_digital;
 
+import Datos.Bibliotecario;
 import Datos.Cliente;
 
 /**

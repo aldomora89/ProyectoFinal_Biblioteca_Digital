@@ -5,10 +5,21 @@
  */
 package proyectofinal_biblioteca_digital;
 
+import Estructuras.PilaCliente;
+import Estructuras.NodoCliente;
+import Estructuras.NodoLibro;
+import Estructuras.ColaLibro;
+
+
 /**
  *
  * @author aldomora89
  */
 public class Admin {
+    
+    ColaLibro libros;
+    PilaCliente clientes;
+    
+  
     
 }
