@@ -5,8 +5,8 @@
  */
 package Estructuras;
 
-import proyectofinal_biblioteca_digital.Cliente;
-import proyectofinal_biblioteca_digital.Libro;
+import Datos.Cliente;
+import Datos.Libro;
 
 /**
  *

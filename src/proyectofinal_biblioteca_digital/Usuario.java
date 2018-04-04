@@ -5,6 +5,8 @@
  */
 package proyectofinal_biblioteca_digital;
 
+import Datos.Cliente;
+
 /**
  *
  * @author aldomora89
