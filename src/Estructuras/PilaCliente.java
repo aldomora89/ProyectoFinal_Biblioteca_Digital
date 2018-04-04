@@ -10,8 +10,8 @@ package Estructuras;
  * @author Colochos
  */
 public class PilaCliente {
-    
-     private NodoCliente top;
+
+    private NodoCliente top;
 
     public void push(NodoCliente n) {
 
@@ -35,24 +35,40 @@ public class PilaCliente {
     public boolean encuentra(int n) {
         NodoCliente aux = top;
         while (aux != null) {
-            if (n == aux.getDato().getEdad()) {               
+            if (n == aux.getDato().getEdad()) {
                 return true;
             }
             aux = aux.getAbajo();
         }
         return false;
     }
-    
-    public NodoCliente elimina(int m){
+
+    public NodoCliente elimina(int m) {
         NodoCliente aux = top;
         while (aux != null) {
-            if (m == aux.getDato().getEdad()) {               
+            if (m == aux.getDato().getEdad()) {
                 top = top.getAbajo();
                 aux.setAbajo(null);
             }
             aux = aux.getAbajo();
         }
         return aux;
+    }
+
+    public void modificaClientePresta(String Correo, String Telefono, int id, String Curso) {
+        /**
+         * Este metodo es al que el bibliotecario tiene acceso, y se le muestran
+         * los datos que este puede cambiar.
+         */
+        NodoCliente aux = top;
+        while (aux != null) {
+            if (aux.getDato().getId() == id) {
+                aux.getDato().setCorreo(Correo);
+                aux.getDato().setTelefono(Telefono);
+//                aux.getNodobiblio().setCurso(Curso);
+            }
+            aux = aux.getAbajo();
+        }
     }
 
     @Override
@@ -65,5 +81,5 @@ public class PilaCliente {
         }
         return msj;
     }
-    
+
 }
